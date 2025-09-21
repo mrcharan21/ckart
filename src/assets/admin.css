@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.navbar-links {
+  margin: 0;
+  padding: 0;
+}
+.navbar-links {
+  margin-left: 10% !important;
+}
+.navbar-links li {
+  display: block;
+  padding: 0 auto;
+}
+.navbar-links a {
+  color: white;
+  font-size: 20px;
+}
+.sidebar-links {
+  margin-left: 0% !important;
+  
+}
+.sidebar-links li {
+  display: block;
+  padding: 18px 4px;
+}
+.sidebar-links a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  transition: background-color 0.3s ease;
+}
+.sidebar-links a:hover {
+  color: #41c007; /* optional: highlight color like Bootstrap's warning */
+}
+
+
+/* Lock entire page height */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Sticky navbar */
+.MDBContainer.bg-dark {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Layout wrapper: sidebar + content --This is in AdminLayout*/
+.layout-container {
+  display: flex;
+  height: calc(100vh - 76px); /* 76px = AdminHeader height */
+}
+
+
+/* Scrollable dashboard */
+.dashboard-scroll-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #fff;
+  height: calc(100vh - 76px);
+}
+
