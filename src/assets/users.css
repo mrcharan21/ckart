@@ -1,0 +1,26 @@
+/* Apply scroll styles to html and body */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; /* Always show vertical scrollbar */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Optional: Custom scrollbar for webkit browsers */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background: #f0f0f0; /* track color */
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background: #888; /* scrollbar handle color */
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color on hover */
+}

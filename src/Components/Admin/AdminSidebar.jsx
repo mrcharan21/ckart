@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaUser,
   FaToolbox,
@@ -9,10 +9,14 @@ import {
   FaStar,
   FaEnvelope,
   FaCalendarCheck,
+  FaChevronDown,
+  FaChevronUp,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function AdminSidebar() {
+  const [isProductOpen, setIsProductOpen] = useState(false);
+
   return (
     <div className="flex flex-col w-64 bg-gray-900 text-white p-4 shadow-lg h-screen">
       <ul className="space-y-3">
@@ -25,6 +29,7 @@ export default function AdminSidebar() {
             <span>Dashboard</span>
           </Link>
         </li>
+
         <li>
           <Link
             to="/admin-login/manage-customers"
@@ -34,51 +39,63 @@ export default function AdminSidebar() {
             <span>Manage Customers</span>
           </Link>
         </li>
+
         <li>
           <Link
-            to="/admin-login/add-centers"
+            to="/admin-login/add-Category"
             className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 transition"
           >
             <FaBuilding />
-            <span>Add Customers</span>
+            <span>Add Category</span>
           </Link>
         </li>
+
         <li>
           <Link
-            to="/admin-login/add-franchise"
+            to="/admin-login/add-Subcategory"
             className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 transition"
           >
             <FaUserPlus />
-            <span>Add </span>
+            <span>Add Subcategory</span>
           </Link>
         </li>
+
+        {/* Dropdown for Products */}
         <li>
-          <Link
-            to="/admin-login/addcourse"
-            className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 transition"
+          <button
+            onClick={() => setIsProductOpen(!isProductOpen)}
+            className="flex items-center justify-between w-full p-2 rounded-md hover:bg-gray-700 transition"
           >
-            <FaBook />
-            <span>Add </span>
-          </Link>
+            <span className="flex items-center gap-2">
+              <FaBook />
+              <span>Products</span>
+            </span>
+            {isProductOpen ? <FaChevronUp /> : <FaChevronDown />}
+          </button>
+
+          {isProductOpen && (
+            <ul className="ml-6 mt-2 space-y-2 text-sm">
+              <li>
+                <Link
+                  to="/admin-login/add-products"
+                  className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 transition"
+                >
+                  ➤ Add Product
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/admin-login/manage-products"
+                  className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 transition"
+                >
+                  ➤ Manage Products
+                </Link>
+              </li>
+              
+            </ul>
+          )}
         </li>
-        <li>
-          <Link
-            to="/admin-login/addblogs"
-            className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 transition"
-          >
-            <FaBlog />
-            <span>Add </span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/admin-login/managereviews"
-            className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 transition"
-          >
-            <FaStar />
-            <span>Manage</span>
-          </Link>
-        </li>
+
         <li>
           <Link
             to="/admin-login/managecontacts"
@@ -88,6 +105,27 @@ export default function AdminSidebar() {
             <span>Manage Contacts</span>
           </Link>
         </li>
+
+        <li>
+          <Link
+            to="/admin-login/manage-feedback"
+            className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 transition"
+          >
+            <FaBlog />
+            <span>Manage Feedback</span>
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            to="/admin-login/managereviews"
+            className="flex items-center gap-2 p-2 rounded-md hover:bg-gray-700 transition"
+          >
+            <FaStar />
+            <span>Manage Reviews</span>
+          </Link>
+        </li>
+
         <li>
           <Link
             to="/admin-login/loggedin"

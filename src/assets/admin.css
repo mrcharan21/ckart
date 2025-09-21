@@ -43,6 +43,7 @@ html, body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+  
 }
 
 /* Sticky navbar */
@@ -67,4 +68,5 @@ html, body {
   background-color: #fff;
   height: calc(100vh - 76px);
 }
+
 

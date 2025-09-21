@@ -1,0 +1,142 @@
+{
+  "categories": [
+    {
+      "name": "mensproducts",
+      "subcategories": [
+        "Shirts",
+        "Trousers",
+        "Shoes"
+      ]
+    },
+    {
+      "name": "womensproducts",
+      "subcategories": [
+        "Dresses",
+        "Jewelry",
+        "Handbags"
+      ]
+    },
+    {
+      "name": "electronics",
+      "subcategories": [
+        "Mobiles",
+        "Laptops",
+        "Tablets"
+      ]
+    },
+    {
+      "name": "homeFurniture",
+      "subcategories": [
+        "Sofas",
+        "Beds",
+        "Dining Tables"
+      ]
+    },
+    {
+      "name": "kidsproducts",
+      "subcategories": [
+        "pants",
+        "Shirts",
+        "T-shirts"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "mensproducts",
+      "subcategory": "Shirts",
+      "name": "Men's Casual Shirt",
+      "oldPrice": 1200,
+      "offerPrice": 999,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9cDQ6VF_cXShIWp_2pAKyDidCoMz2OxIQKg&s",
+      "qty": 15,
+      "description": "A comfortable casual shirt for men.",
+      "addedDate": "2025-09-01"
+    },
+    {
+      "id": 2,
+      "category": "mensproducts",
+      "subcategory": "Trousers",
+      "name": "Men's Formal Trousers",
+      "oldPrice": 1500,
+      "offerPrice": 1299,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9cDQ6VF_cXShIWp_2pAKyDidCoMz2OxIQKg&s",
+      "qty": 25,
+      "description": "Perfect trousers for formal occasions.",
+      "addedDate": "2025-08-15"
+    },
+    {
+      "id": 3,
+      "category": "womensproducts",
+      "subcategory": "Dresses",
+      "name": "Women's Summer Dress",
+      "oldPrice": 2000,
+      "offerPrice": 1699,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx_zn85On2081sExeFjrAlQDFYF6fNu54Czg&s",
+      "qty": 30,
+      "description": "Light and breezy dress for summer.",
+      "addedDate": "2025-07-20"
+    },
+    {
+      "id": 4,
+      "category": "electronics",
+      "subcategory": "Mobiles",
+      "name": "Smartphone XYZ",
+      "oldPrice": 15000,
+      "offerPrice": 13999,
+      "image": "https://example.com/images/smartphone-xyz.jpg",
+      "qty": 10,
+      "description": "Latest smartphone with advanced features.",
+      "addedDate": "2025-09-10"
+    },
+    {
+      "id": 5,
+      "category": "homeFurniture",
+      "subcategory": "Sofas",
+      "name": "Luxury Sofa Set",
+      "oldPrice": 25000,
+      "offerPrice": 23000,
+      "image": "https://example.com/images/luxury-sofa.jpg",
+      "qty": 5,
+      "description": "Comfortable sofa set for your living room.",
+      "addedDate": "2025-06-30"
+    },
+    {
+      "id": "ed6a",
+      "category": "mensproducts",
+      "subcategory": "Trousers",
+      "name": "DNMX ",
+      "oldPrice": "2000",
+      "offerPrice": "1500",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_3aD483reiihmmg6DLaBD0uiSen6LM1yXvA&s",
+      "qty": "3",
+      "description": "Good ",
+      "addedDate": "2025-09-21"
+    },
+    {
+      "id": "65c4",
+      "category": "womensproducts",
+      "subcategory": "Dresses",
+      "name": "Plazzo",
+      "oldPrice": "2000",
+      "offerPrice": "1000",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx_zn85On2081sExeFjrAlQDFYF6fNu54Czg&s",
+      "qty": "2",
+      "description": "Good",
+      "addedDate": "2025-09-21"
+    },
+    {
+      "id": "e858",
+      "category": "kidsproducts",
+      "subcategory": "pants",
+      "name": "NetPlay",
+      "oldPrice": "2000",
+      "offerPrice": "800",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTutjvirCocQQkx3qYzfJ2bOUKTr9y1OilFpQ&s",
+      "qty": "10",
+      "description": "Good",
+      "addedDate": "2025-09-21"
+    }
+  ]
+}
